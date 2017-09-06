@@ -64,9 +64,8 @@ ___
 ```
 <?php
 require_once("ipa.php");
-$ipa = new aAlharthi\Ninja\IPA(); // do not load any ipa file (already done in this example!)
 foreach (glob('*.plist') as $manifest){
-	$ipa =  new aAlharthi\Ninja\IPA();
+	$ipa =  new aAlharthi\Ninja\IPA(); // Do not load any IPA file, already done in this example
 	$app = $ipa->read($manifest);
 	echo '<a href="'.$ipa->link().'">'.$ipa->appName.'</a><br>'; // Create a download link (IOS devices)
 }
