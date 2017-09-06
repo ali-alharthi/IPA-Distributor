@@ -321,7 +321,7 @@ class IPA {
    protected function icon($info){
 
 
-      $icon = str_replace(' ', '', strtolower($info['appName'])).'.png';
+      $icon = str_replace(' ', '', strtolower(basename($this->ipa, ".ipa"))).'.png';
 
       /**
       * Check if destination exist, if not create it
@@ -392,7 +392,7 @@ class IPA {
       /**
       * Use the app name to create a manifest name
       */
-      $this->manifestPath = $this->destination.'/'.$this->appName.".plist";
+      $this->manifestPath = $this->destination.'/'.str_replace(' ', '', strtolower(basename($this->ipa, ".ipa"))).".plist";
 
       /**
       * Write the manifest to the created name
