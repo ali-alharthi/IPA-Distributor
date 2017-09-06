@@ -23,8 +23,7 @@ Usage
 	- Manifest path: ```echo $ipa->manifestPath;```
 
 - Read a manifest and get necessary info:
-```$ipa->read('manifest.plist');```
-returns: ⋅⋅
+```$ipa->read('manifest.plist');``` returns:
 ```
 Array{ 'appIPA' => 'The app ipa file path', 'appName' => 'The app name', 'appVersion' => 'The app version', 'appBundleID' => 'The app bundle identifier' }
 ```
@@ -32,8 +31,7 @@ Array{ 'appIPA' => 'The app ipa file path', 'appName' => 'The app name', 'appVer
 - Get full download link (IPA):
 ```echo $ipa->link();```
 	- From a manifest:
-	```echo $ipa->link('manifest.plist');```
-	⋅⋅⋅ returns: ⋅⋅
+	```echo $ipa->link('manifest.plist');``` returns:
 ```
 itms-services://?action=download-manifest&url=https://www.example.com/ $destination /manifest.plist
 ```
