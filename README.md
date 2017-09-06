@@ -1,4 +1,4 @@
-![www.Ali.ninja](http://www.ali.ninja/projects/ipa.png "www.Ali.ninja")
+![www.Ali.ninja](https://raw.githubusercontent.com/x0ninja/IPA-Distributor/master/ipa.png "www.ali.ninja")
 
 This class, will read the necessary information to create manifest which gives you the ability to distribute your IPA files on the fly!
 This class is using: **[CFPropertyList](https://github.com/rodneyrehm/CFPropertyList)**
