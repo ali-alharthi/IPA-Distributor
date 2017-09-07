@@ -6,7 +6,7 @@
  * IPA Distribution Class (ad-hoc).
  * Creates manifest from ipa files for distribution or read manifests.
  *
- * @package    IPA
+ * @package    IPA-Distributor
  * @author     Ali Alharthi <root@ali.ninja>
  * @copyright  2017-2018 www.ali.ninja
  * @license    MIT
