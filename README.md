@@ -85,6 +85,12 @@ echo $app['appName'];  // Returns the app name (Returned array from read())
 ```
 ___
 
+Demo
+=====
+**Live demo at [iOS Apps](https://www.ali.ninja/ios)**
+
+___
+
 Bugs
 =====
 - E-mail: **```root@ali.ninja```**
