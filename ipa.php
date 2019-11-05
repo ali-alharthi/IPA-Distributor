@@ -11,7 +11,7 @@
  * @copyright  2017-2018 www.ali.ninja
  * @license    MIT
  * @version    1.0
- * @link       https://www.ali.ninja/projects/ipa.txt
+ * @link       https://github.com/ali-alharthi/IPA-Distributor
  *
  */
 namespace aAlharthi\Ninja;
