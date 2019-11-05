@@ -8,7 +8,7 @@
  *
  * @package    IPA-Distributor
  * @author     Ali Alharthi <root@ali.ninja>
- * @copyright  2017-2018 www.ali.ninja
+ * @copyright  2017-2019 www.ali.ninja
  * @license    MIT
  * @version    1.0
  * @link       https://github.com/ali-alharthi/IPA-Distributor
@@ -37,7 +37,7 @@ class IPA {
    *
    * @var string
    */
-   protected $url = 'https://www.ali.ninja/ipa/'; // Full url include http/s:// and folder etc, don't be lazy!
+   protected $url = 'https://www.ali.ninja/ipa/'; // Full url including http:// or https:// and the full path, don't be lazy!
 
    /**
    * Icon size [2x, 3x] 
@@ -112,13 +112,13 @@ class IPA {
    public function __construct($ipa=NULL, $auto = FALSE){
 
       /**
-      * Check if IPA was set, if so load it
+      * Check if IPA file was set, if so load it
       */
       !empty($ipa)?$this->ipa=$ipa:$this->ipa=null;
 
       /**
       * Check if auto was set, if so run as follow:
-      * 1. Extarct IPA (with both options set to true).
+      * 1. Extract the IPA (with both options set to true).
       * 3. Generate a manifest.
       * 4. Delete all the dirty work.
       */
@@ -144,13 +144,13 @@ class IPA {
    public function eIPA($movetodestination = TRUE, $includeappicon = TRUE){
 
       /**
-      * Check if IPA exist
+      * Check if the IPA file exist
       */
       if (!is_file($this->ipa) or empty($this->ipa))
          die("ipa file not found.");
 
       /**
-      * Check if IPA is readable
+      * Check if the IPA file is readable
       */
       if (!is_readable($this->ipa))
          die("can not read ipa file.");
@@ -163,7 +163,7 @@ class IPA {
 
       $zip = new \ZipArchive;
       /**
-      * Check if IPA unzipped correctly
+      * Check if the IPA file was unzipped correctly
       */
       if ($zip->open($this->ipa) === TRUE){
 
@@ -259,7 +259,7 @@ class IPA {
    }
 
    /**
-   * Extraxt information from a manifest.
+   * Extract information from a manifest.
    *
    * @param string $manifest to manifest path.
    * @return array with app info.
@@ -442,7 +442,7 @@ class IPA {
    }
 
    /**
-   * Clean the temp folder (extraxted ipa).
+   * Clean the temp folder (extracted ipa).
    *
    * @access public
    */
